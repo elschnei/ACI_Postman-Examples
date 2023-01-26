@@ -1,0 +1,22 @@
+This Postman collection and environment are intended as an example for the following tasks in a controlled ACI lab environment. Testing may vary depending on your environment and changes:
+- Create an tenant.
+- Create one application profile.
+- Create two endpoint groups (EPGs) in the existing Application Profile (1 Physical and 1 VMM domain).
+- Create two Bridge Domains (BDs) for the existing EPGs.
+- Create an ICMP test contract with a subject and filter.
+- Create an OSPF L3Out for a dedicated physical point-to-point layer-3 port (ex. eth1/10).
+- Create fabric access policies for L3-External Routed Domain, AAEP, Leaf Interface Policy Group, Leaf Interface Profile and interface selector block.
+- Modify Leaf switch node profiles to add the new fabric access policies and interfaces.
+
+Assumptions:
+- You have completed VMM integration to deploy new configuration into an existing/ established VMM domain.
+- You have a Baremetal environment to deploy static path bindings for a physical domain and the static path bindings are completed on the EPG.
+- Basic and fundamental ACI fabric tasks have already been completed. (ex. Mgmt Tenant OOB, CDP, LLDP, Interface Speed policies)
+- You have an external router for OSPF P2P neighborships to establish the L3Out.
+
+
+Example files are located in the "Postman-Refined-Files" folder.
+
+
+Contact information:
+Email: elschnei@cisco.com
